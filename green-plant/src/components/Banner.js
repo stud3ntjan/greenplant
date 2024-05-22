@@ -9,8 +9,8 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Web Entwickler", "Web Designer", "Netter Kerl"];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 200);
-  const period = 500;
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -50,7 +50,7 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
+            <span className="tagline">Jan's Portfolio</span>
             <h1>
               {`Hey ich bin ein `}
               <span className="wrap">{text}</span>
